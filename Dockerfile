@@ -19,7 +19,7 @@
 # IN THE SOFTWARE.
 
 
-FROM registry.conarx.tech/containers/alpine/edge AS go-builder
+FROM registry.conarx.tech/containers/alpine/3.21 AS go-builder
 
 
 # https://go.dev/dl/
@@ -123,12 +123,12 @@ RUN set -eux; \
 	du -hs .
 
 
-FROM registry.conarx.tech/containers/alpine/edge
+FROM registry.conarx.tech/containers/alpine/3.21
 
 ARG VERSION_INFO=
 LABEL org.opencontainers.image.authors		= "Nigel Kukard <nkukard@conarx.tech>"
-LABEL org.opencontainers.image.version		= "edge"
-LABEL org.opencontainers.image.base.name	= "registry.conarx.tech/containers/alpine/edge"
+LABEL org.opencontainers.image.version		= "3.21"
+LABEL org.opencontainers.image.base.name	= "registry.conarx.tech/containers/alpine/3.21"
 
 # https://go.dev/dl/
 ENV GO_VER=1.24.3
