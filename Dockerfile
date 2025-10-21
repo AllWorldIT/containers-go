@@ -23,7 +23,7 @@ FROM registry.conarx.tech/containers/alpine/edge AS go-builder
 
 
 # https://go.dev/dl/
-ENV GO_VER=1.25.1
+ENV GO_VER=1.25.3
 
 
 # Copy build patches
@@ -131,7 +131,7 @@ LABEL org.opencontainers.image.version="edge"
 LABEL org.opencontainers.image.base.name="registry.conarx.tech/containers/alpine/edge"
 
 # https://go.dev/dl/
-ENV GO_VER=1.25.1
+ENV GO_VER=1.25.3
 
 ENV FDC_DISABLE_SUPERVISORD=true
 ENV FDC_QUIET=true
