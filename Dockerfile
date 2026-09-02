@@ -24,7 +24,7 @@ FROM registry.conarx.tech/containers/alpine/3.22 AS go-builder
 
 # https://go.dev/dl/
 # THIS IS BELOW ASWELL
-ENV GO_VER=1.26.5
+ENV GO_VER=1.27.1
 
 
 # Copy build patches
@@ -132,7 +132,7 @@ LABEL org.opencontainers.image.version="3.22"
 LABEL org.opencontainers.image.base.name="registry.conarx.tech/containers/alpine/3.22"
 
 # https://go.dev/dl/
-ENV GO_VER=1.26.5
+ENV GO_VER=1.27.1
 
 ENV FDC_DISABLE_SUPERVISORD=true
 ENV FDC_QUIET=true
